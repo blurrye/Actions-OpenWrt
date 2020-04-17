@@ -6,7 +6,8 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build 极路由B70(HiWiFi HC5962)
+# 测试下模块
+name: lede20200408 zerotier=m
 
 on:
   repository_dispatch:
@@ -24,11 +25,11 @@ on:
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  REPO_BRANCH: 20200408
   CONFIG_FILE: hc5962.config
   DIY_SH: diy.sh
   SSH_ACTIONS: false
-  UPLOAD_BIN_DIR: false
+  UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
   UPLOAD_WETRANSFER: false
